@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 34%, 66%);
+      text-decoration: none;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+<main>
+
+
+  <header>
+
+    <div class="header-content">
+
+      <div class="header-main">
+
+        <h1>Social Media Dashboard</h1>
+        <h4>Total Followers: 23,004</h4>
+      </div>
+
+<hr />
+
+      <div class="toggle-switch">
+        <p class="mode">Dark Mode</p>
+        <label id="switch" class="switch">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+    </div>
+
+  </header>
+
+
+<div class="main-content">
+  <div class="top-grid-wrapper">
+
+
+    <div class="grid-item grid-item-1">
+      <div class="handle facebook-icon">@nathanf</div>
+      <div class="number-value-large">1987</div>
+      <span class="followers">Followers</span>
+      <span class="daily-count green arrow-up">12 Today</span>
+    </div>
+
+    <div class="grid-item grid-item-2">
+      <div class="handle twitter-icon">@nathanf</div>
+      <div class="number-value-large">1044</div>
+      <span class="followers">Followers</span>
+      <span class="daily-count green arrow-up">99 Today</span>
+    </div>
+
+    <div class="grid-item grid-item-3 ">
+      <div class="handle instagram-icon">@realnathanf</div>
+      <div class="number-value-large">11k</div>
+      <span class="followers">Followers</span>
+      <span class="daily-count green arrow-up">1099 Today</span>
+    </div>
+
+    <div class="grid-item grid-item-4">
+      <div class="handle youtube-icon">Nathan F.</div>
+      <div class="number-value-large">8239</div>
+      <span class="followers">Subscribers</span>
+      <span class="daily-count red arrow-down">144 Today</span>
+    </div>
+
+  </div>
+
+
+  <div class="mid-section-header">
+
+    <h2>Overview - Today </h2>
+  </div>
+
+  <div class="bottom-grid-wrapper">
+
+    <div class="grid-item inside-grid">
+      <div class="flex-container center-align">
+        <div class="desaturated-blue">Page Views</div>
+        <img src="images/icon-facebook.svg" />
+      </div>
+      <div class="flex-container">
+        <div class="number-value-small">87</div>
+        <span class="green arrow-up daily-count">3%</span>
+      </div>
+    </div>
+
+    <div class="grid-item inside-grid">
+      <div class="flex-container center-align">
+      <div class="desaturated-blue">Likes</div>
+      <img src="images/icon-facebook.svg" />
+</div>
+      <div class="flex-container">
+      <div class="number-value-small">52</div>
+      <span class="red arrow-down daily-count">2%</span>
+      </div>
+    </div>
+
+    <div class="grid-item inside-grid">
+      <div class="flex-container center-align">
+      <div class="desaturated-blue">Likes</div>
+      <img src="images/icon-instagram.svg" />
+      </div>
+      <div class="flex-container">
+      <div class="number-value-small">5462</div>
+      <span class="green arrow-up daily-count">2257%</span>
+      </div>
+    </div>
+
+    <div class="grid-item inside-grid">
+      <div class="flex-container center-align">
+      <div class="desaturated-blue">Profile Views</div>
+      <img src="images/icon-instagram.svg" />
+      </div>
+      <div class="flex-container">
+      <div class="number-value-small">52k</div>
+      <span class="green arrow-up daily-count">1375%</span>
+      </div>
+    </div>
+
+    <div class="grid-item inside-grid">
+      <div class="flex-container center-align">
+      <div class="desaturated-blue">Retweets</div>
+      <img src="images/icon-twitter.svg" />
+      </div>
+      <div class="flex-container">
+      <div class="number-value-small">117</div>
+      <span class="green arrow-up daily-count">303%</span>
+      </div>
+    </div>
+
+    <div class="grid-item inside-grid">
+      <div class="flex-container center-align">
+      <div class="desaturated-blue">Likes</div>
+      <img src="images/icon-instagram.svg" />
+      </div>
+      <div class="flex-container">
+      <div class="number-value-small">507</div>
+      <span class="green arrow-up daily-count">553%</span>
+      </div>
+    </div>
+
+    <div class="grid-item inside-grid">
+      <div class="flex-container center-align">
+      <div class="desaturated-blue">Likes</div>
+    <img src="images/icon-youtube.svg" />
+      </div>
+      <div class="flex-container">
+      <div class="number-value-small">107</div>
+      <span class="red arrow-down daily-count">19%</span>
+      </div>
+    </div>
+
+    <div class="grid-item inside-grid">
+      <div class="flex-container center-align">
+      <div class="desaturated-blue">Total Views</div>
+      <img src="images/icon-youtube.svg" />
+      </div>
+      <div class="flex-container">
+      <div class="number-value-small">1407</div>
+      <span class="red arrow-down daily-count">12%</span>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  </div>
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Cecilia</a>.
+  </div>
+
+  </main>
+
+</body>
+
+<script src="index.js"></script>
+
+
+</html>

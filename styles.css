@@ -1,0 +1,377 @@
+:root {
+  --padding: 30px 100px;
+}
+
+.green {
+  color: hsl(163, 72%, 41%);
+}
+
+.red {
+  color: hsl(356, 69%, 56%);
+}
+
+.desaturated-blue {
+  color: hsl(228, 34%, 66%);
+}
+
+body {
+  --body-background: hsl(230, 17%, 14%);
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  background: var(--body-background);
+  color: var(--text-color);
+  --text-color: white;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+
+body.light {
+  --body-background: hsl(0, 0%, 100%);
+  --text-color: hsl(228, 12%, 44%);
+}
+
+.main-content {
+  padding: var(--padding);
+}
+
+.header-content {
+  padding: var(--padding);
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h4 {
+  color: hsl(228, 34%, 66%);
+  margin-top: 10px;
+
+}
+
+hr {
+  display: none;
+}
+
+.toggle-switch {
+  color: hsl(228, 34%, 66%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  font-weight: 700;
+  
+}
+
+.switch {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch .slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  --switch-background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  background: var(--switch-background);
+  border-radius: 50px;
+}
+
+.switch .slider.light {
+  background: var(--switch-background);
+  --switch-background: hsl(230, 22%, 74%);
+}
+
+.switch .slider.light:hover {
+  background:linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+} 
+
+
+.switch .slider:before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: var(--round-button);
+  --round-button: hsl(230, 17%, 14%);
+  border-radius: 100%;
+  top: 2px;
+  bottom: 0;
+  left: 2px;
+  right: 0;
+  transition: .5s;
+}
+
+.switch .slider.light:before{
+  background: var(--round-button);
+  --round-button: white;
+}
+
+.switch input:checked +.slider:before {
+  left: 27px;
+}
+
+
+.top-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 35px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5em;
+}
+
+
+.followers {
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  font-size: 13px;
+  color: hsl(228, 34%, 66%);
+
+}
+
+.daily-count {
+  font-size: 11px;
+  padding-top: 30px;
+}
+
+.arrow-up:before {
+  content: url(images/icon-up.svg);
+  position: relative;
+  top: -3px;
+  margin-right: 4px;
+}
+
+.arrow-down:before {
+  content: url(images/icon-down.svg);
+  position: relative;
+  top: -2px;
+  margin-right: 4px;
+}
+
+.grid-item {
+  text-align: center;
+  --item-bg-color: hsl(228, 28%, 20%);
+  background-color: var(--item-bg-color);
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  background-color: hsl(229, 25%, 30%);
+}
+
+.grid-item.light {
+  background-color: var(--item-bg-color);
+  --item-bg-color: hsl(227, 47%, 96%);
+}
+.grid-item.light:hover {
+  background-color: hsl(225, 23%, 90%);
+}
+
+
+.grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4 {
+  padding: 40px;
+  height: 190px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item-1 {
+  border-top: solid 5px hsl(208, 92%, 53%);
+}
+
+
+.grid-item-2 {
+  border-top: solid 5px hsl(203, 89%, 53%);
+}
+
+.grid-item-3 {
+  border-style: solid;
+  border-width: 5px;
+  border-image: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%))
+                100% 0 0 0/5px 0 0 0;
+                
+}
+
+.grid-item-4 {
+  border-top: solid 5px hsl(348, 97%, 39%);
+}
+
+.number-value-large {
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 30px;
+}
+
+.handle {
+  color: hsl(228, 34%, 66%);
+  font-size: 12px;
+}
+
+.facebook-icon:before {
+  content: url(images/icon-facebook.svg);
+  margin-right: 10px;
+  top: 4px;
+  position: relative;
+}
+
+.twitter-icon:before {
+  content: url(images/icon-twitter.svg);
+  margin-right: 10px;
+  top: 4px;
+  position: relative;
+}
+
+.instagram-icon:before {
+  content: url(images/icon-instagram.svg);
+  margin-right: 10px;
+  top: 4px;
+  position: relative;
+}
+
+.youtube-icon:before {
+  content: url(images/icon-youtube.svg);
+  margin-right: 10px;
+  top: 4px;
+  position: relative;
+}
+
+.mid-section-header {
+  margin-top: 100px;
+}
+
+.bottom-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 35px;
+  row-gap: 35px;
+  margin: 0 auto 100px auto;
+}
+
+.bottom-grid-wrapper.grid-item {
+  padding: 5px 20px;
+  
+}
+
+
+.number-value-small {
+  font-size: 30px;
+  font-weight: 700;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 15px 0;
+}
+
+.flex-container .daily-count {
+  padding: 0;
+}
+
+.center-align {
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 870px) {
+
+  body {
+    display: block;
+    height: 100%;
+  }
+
+  .header-content {
+    margin-top: .5em;
+    padding: 0 10px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .top-grid-wrapper, .bottom-grid-wrapper {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+  }
+
+  .header-content {
+    padding: 20px 30px;
+    display: block;
+  }
+
+  .header-main {
+    display: block;
+    width: 100%;
+  }
+
+  .toggle-switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+
+  hr {
+    display: block;
+    border-top-style: solid .5px;
+    border-top-color: hsl(228, 28%, 50%);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin: 20px 0;
+  }
+
+  .grid-item {
+    margin: 20px;
+    width: auto;
+  }
+
+  .mid-section-header {
+    display: block;
+    max-width: 100%;
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+
+  .border-gradient{
+    position: absolute;
+    background:linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    height: 5px;
+    width: inherit;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    top: 0;
+    
+  }
+}
